@@ -24,7 +24,7 @@ end
 
 def calc_average(num1, num2)
     sum = num1 + num2
-    avg = sum / 2.0                # the return keyword lets a method call evaluate to a value 
+    avg = sum / 2.0                # the return keyword lets a method call evaluate to a value IE more flexable use that shit
     return avg      #with return use puts with call (calc_average)
 end
 
@@ -54,4 +54,7 @@ end
 puts goodbye("Daniel")  #=> Bye Daniel.
 puts goodbye("Mark")    #=> Bye Mark.
 puts goodbye("Beyonce") #=> Bye Beyonce.
+
+
+edit
 
