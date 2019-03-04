@@ -56,5 +56,4 @@ puts goodbye("Mark")    #=> Bye Mark.
 puts goodbye("Beyonce") #=> Bye Beyonce.
 
 
-edit
 
