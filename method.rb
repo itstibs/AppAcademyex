@@ -55,5 +55,8 @@ puts goodbye("Daniel")  #=> Bye Daniel.
 puts goodbye("Mark")    #=> Bye Mark.
 puts goodbye("Beyonce") #=> Bye Beyonce.
 
+def meal(food, drink)
+    sentence = "i like to eat " + food + " with a cup of " + drink
+end
 
-
+puts meal("toast", "coffee")
