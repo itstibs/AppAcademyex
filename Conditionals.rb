@@ -39,17 +39,48 @@
 
 #conditionals practice question
 
-def is_div_by_5(number)
-    if number % 5 == 0
+#def is_div_by_5(number)                 # this is the long version 
+#   if number % 5 == 0
+ #   return true
+#   else
+#    return false
+#  end
+#end
+
+#def is_div_by_5(number)
+#    return number % 5 == 0          #this is the short version 
+#end
+
+#puts is_div_by_5(10)        #=>true
+#puts is_div_by_5(40)        #=>true
+#puts is_div_by_5(42)        #=>false
+#puts is_div_by_5(8)         #=>false
+
+
+        #conditional practice question (either only)
+
+def either_only(number)
+    if (number % 3 == 0 || number % 5 == 0) && !(number % 3 == 0 && number % 5 == 0)
         return true
     else 
         return false
-    end
+    end         #remember to use two (ends) to close your condition and function
 end
 
-puts is_div_by_5(10)        #=>true
-puts is_div_by_5(40)        #=>true
-puts is_div_by_5(42)        #=>false
-puts is_div_by_5(8)         #=>false
+def either_only(number)
+    if (number % 3 == 0 && number % 5 != 0) || (number % 3 != 0 && number % 5 == 0)
+        return true
+    else
+        return false
+    end
+end             #alternative way of writing it
 
 
+puts either_only(9)  # => true
+puts either_only(20) # => true
+puts either_only(7)  # => false
+puts either_only(15) # => false
+puts either_only(30) # => false
+
+
+# left off at larger number 
