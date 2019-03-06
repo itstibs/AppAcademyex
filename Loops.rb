@@ -143,4 +143,80 @@
 # from 1 up to and including max.
 
 
-def sum_nums
+#def sum_nums(max)
+#  sum = 0
+
+# min = 1  #min == "i"
+#  while min <= max # min == "i"
+#    sum += min
+
+#    min += 1
+#  end
+
+#  return sum
+#end
+
+
+#puts sum_nums(4) # => 10, because 1 + 2 + 3 + 4 = 10
+#puts sum_nums(5) # => 15
+
+# iteration test 
+
+#def sum_nums(max)
+#  i = 1
+#  while i <= max
+#    puts i 
+
+#    i += 1
+#  end
+#end
+
+#puts sum_nums(4)
+
+# factoral practice problem
+# Write a method factorial(num) that takes in a number num 
+# and returns the product of all numbers from 1 up to and including num.
+
+
+#def factorial(num)
+# factor = 1
+#  i = 1
+# while i <= num
+#  factor *= i 
+#  i += 1
+# end
+# return factor 
+#end
+
+
+#puts factorial(3) # => 6, because 1 * 2 * 3 = 6
+#puts factorial(5) # => 120, because 1 * 2 * 3 * 4 * 5 = 120
+
+#reverse practice problem
+#  Write a method reverse(word) that takes in a string word 
+#  and returns the word with its letters in reverse order.
+
+
+def reverse(word)
+  reversed = ""
+
+  i = 0
+  while i < word.length
+    char = word[i]
+    reversed = char + reversed    #reversed the way the += worked by writing it longhand
+                                  # char + reversed is adding char to the front 
+    i += 1                  # of the string instead of behind what is already in the string
+  end
+
+  return reversed
+end
+
+
+# try making a version to go through the word from the end to the startand having it 
+# return that way instead 
+
+puts reverse("cat")          # => "tac"
+puts reverse("programming")  # => "gnimmargorp"
+puts reverse("bootcamp")     # => "pmactoob"
+
+# currently on reverse walkthrough
