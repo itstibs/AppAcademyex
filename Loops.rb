@@ -215,8 +215,46 @@ end
 # try making a version to go through the word from the end to the startand having it 
 # return that way instead 
 
-puts reverse("cat")          # => "tac"
-puts reverse("programming")  # => "gnimmargorp"
-puts reverse("bootcamp")     # => "pmactoob"
+#puts reverse("cat")          # => "tac"
+#puts reverse("programming")  # => "gnimmargorp"
+#puts reverse("bootcamp")     # => "pmactoob"
 
-# currently on reverse walkthrough
+# "Is Palindrome" practice problem
+# Write a method is_palindrome(word) that takes in a string word
+# and returns the true if the word is a palindrome, false otherwise.
+
+#def is_palindrome(word)
+#    new_word = ""
+#    i = 0
+#    while i < word.length
+#      char = word[i]
+
+#     new_word = char + new_word
+#      i += 1
+#    end
+#    if new_word == word   #works as an if statement but its longer
+#      return true
+#    else
+#      return false
+#    end
+#end
+
+
+#shorter way to write it
+def is_palindrome(word)
+  new_word = ""
+  i = 0
+  while i < word.length
+    char = word[i]
+
+    new_word = char + new_word
+    i += 1
+  end
+  return new_word == word
+end
+
+
+
+puts is_palindrome("racecar")  # => true
+puts is_palindrome("kayak")    # => true
+puts is_palindrome("bootcamp") # => false
