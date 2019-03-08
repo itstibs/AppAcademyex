@@ -245,9 +245,8 @@ def is_palindrome(word)
   new_word = ""
   i = 0
   while i < word.length
-    char = word[i]
+    new_word = word[i] + new_word
 
-    new_word = char + new_word
     i += 1
   end
   return new_word == word
