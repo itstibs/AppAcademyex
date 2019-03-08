@@ -53,12 +53,15 @@
 # where every element of the original array is multiplied by 2.
 
 def doubler(numbers)
-
+    arr = 1
     i = 0
     while i < doubler.length
-        arr = numbers
+        arr = numbers[i] * 2
+        
 
         i +=1
+    end
+    return doubler(numbers)
 end
 
 print doubler([1, 2, 3, 4]) # => [2, 4, 6, 8]
