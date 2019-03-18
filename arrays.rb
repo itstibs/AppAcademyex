@@ -53,15 +53,18 @@
 # where every element of the original array is multiplied by 2.
 
 def doubler(numbers)
-    arr = 1
-    i = 0
-    while i < doubler.length
-        arr = numbers[i] * 2
-        
+    doubled_nums = []    #<-- creates an array
 
-        i +=1
-    end
-    return doubler(numbers)
+  i = 0   #<-- indexing
+  while i < numbers.length 	#<-- how long it runs
+    old_num = numbers[i] #<-- new variable
+    new_num = old_num * 2   #<-- new variable
+    doubled_nums << new_num #<-- shoveling variable
+
+    i += 1  #<-- moving index
+  end
+
+  return doubled_nums #<-- returning new array result 
 end
 
 print doubler([1, 2, 3, 4]) # => [2, 4, 6, 8]
