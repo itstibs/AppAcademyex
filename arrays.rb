@@ -76,21 +76,21 @@
 #Write a method yell(words) that takes in an array of words and returns a
 #new array where every word from the original array has an exclamation point after it.
 
-def yell(words)
-    yelling = []
+#def yell(words)
+#    yelling = []
 
-    i = 0
+#    i = 0
 
-    while i < words.length
-        new_word = words[i] + "!"
-        yelling << new_word
+#    while i < words.length
+#        new_word = words[i] + "!"
+#        yelling << new_word
 
-        i += 1
-    end
-    return yelling
-end
+#        i += 1
+#    end
+#    return yelling
+#end
 
 
-print yell(["hello", "world"]) # => ["hello!", "world!"]
-puts
-print yell(["code", "is", "cool"]) # => ["code!", "is!", "cool!"]
+#print yell(["hello", "world"]) # => ["hello!", "world!"]
+#puts
+#print yell(["code", "is", "cool"]) # => ["code!", "is!", "cool!"]
