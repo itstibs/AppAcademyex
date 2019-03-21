@@ -52,21 +52,45 @@
 # Write a method doubler(numbers) that takes an array of numbers and returns a new array
 # where every element of the original array is multiplied by 2.
 
-def doubler(numbers)
-    doubled_nums = []    #<-- creates an array
+#def doubler(numbers)
+#    doubled_nums = []    #<-- creates an array
 
-  i = 0   #<-- indexing
-  while i < numbers.length 	#<-- how long it runs
-    old_num = numbers[i] #<-- new variable
-    new_num = old_num * 2   #<-- new variable
-    doubled_nums << new_num #<-- shoveling variable
+#  i = 0   #<-- indexing
+#  while i < numbers.length 	#<-- how long it runs
+#    old_num = numbers[i] #<-- new variable
+#    new_num = old_num * 2   #<-- new variable
+#    doubled_nums << new_num #<-- shoveling variable
 
-    i += 1  #<-- moving index
-  end
+#    i += 1  #<-- moving index
+#  end
 
-  return doubled_nums #<-- returning new array result 
+#  return doubled_nums #<-- returning new array result 
+#end
+
+#print doubler([1, 2, 3, 4]) # => [2, 4, 6, 8]
+#puts
+#print doubler([7, 1, 8])    # => [14, 2, 16]
+
+
+# "Yell practice question"
+#Write a method yell(words) that takes in an array of words and returns a
+#new array where every word from the original array has an exclamation point after it.
+
+def yell(words)
+    yelling = []
+
+    i = 0
+
+    while i < words.length
+        new_word = words[i] + "!"
+        yelling << new_word
+
+        i += 1
+    end
+    return yelling
 end
 
-print doubler([1, 2, 3, 4]) # => [2, 4, 6, 8]
+
+print yell(["hello", "world"]) # => ["hello!", "world!"]
 puts
-print doubler([7, 1, 8])    # => [14, 2, 16]
+print yell(["code", "is", "cool"]) # => ["code!", "is!", "cool!"]
